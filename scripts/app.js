@@ -8,7 +8,7 @@ const updateUI = (data) => {
 
     // destructuring propeties
 
-    const {cityDets, weather} = data;
+    const { cityDets, weather } = data;
 
     // update details template
     details.innerHTML = `
@@ -17,7 +17,7 @@ const updateUI = (data) => {
         <div class="my-3">${weather.WeatherText}</div>
         <div class="display-4 my-4">
             <span>${weather.Temperature.Metric.Value}</span>
-            <span>&deg</span>
+            <span>&deg;C</span>
         </div>
     `;
 
@@ -45,10 +45,6 @@ const updateUI = (data) => {
     }
 
 };
-
-    
-
-
 
 const updateCity = async (city) => {
 
